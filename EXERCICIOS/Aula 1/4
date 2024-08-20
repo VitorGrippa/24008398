@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+float nota1, nota2, soma, subtracao, multiplicacao, divisao;
+printf("Digite sua nota 1: ");
+scanf("%f", &nota1);
+printf("Digite sua nota 2: ");
+scanf("%f", &nota2);
+soma=(nota1+nota2);
+subtracao=(nota1-nota2);
+multiplicacao=(nota1*nota2);
+divisao=(nota1/nota2);
+printf("a soma sera: %f", soma);
+printf("a subtracao sera: %f", subtracao);
+printf("a subtracao sera: %f", multiplicacao);
+printf("a divisao sera: %f", divisao);
+return 0;
+}
