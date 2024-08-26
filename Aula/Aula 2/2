@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+    float nota1, nota2, nota3, media;
+    char opcao;
+
+    Refaz:
+    printf("digite sua nota:\n");
+    scanf("%f",&nota1);
+    printf("digite sua nota:\n");
+    scanf("%f",&nota2);
+    printf("digite sua nota:\n");
+    scanf("%f",&nota3);
+
+    media = (nota1+nota2+nota3)/3;
+
+    printf("Sua media final e:%f \n", media);
+
+    printf("Deseja calcular novamente?\n");
+    scanf("%s",&opcao);
+    if(opcao=='s'){
+
+        goto Refaz;
+    }
+
+    return 0;
+}
