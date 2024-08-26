@@ -1,9 +1,0 @@
-#include <stdio.h>
-#include <stdlib.h>
-
-int main(){
-    int visitantes;
-    printf("Informe o numero de visitantes no dia de hoje: ");
-    scanf("%i", &visitantes);
-    printf("A quantidade de pessoas no dia atual foram: %i", visitantes);
-}
