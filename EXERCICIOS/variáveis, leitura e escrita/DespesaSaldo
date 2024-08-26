@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    float receita,despesa;
+    float saldo=0.0;
+    printf("Informe sua receita: ");
+    scanf("%f", &receita);
+    printf("Informe a sua despesa: ");
+    scanf("%f", &despesa);
+    saldo=receita-despesa;
+    printf("O seu saldo foi: %f", saldo);
+}
