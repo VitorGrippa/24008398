@@ -1,1 +1,52 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
+int main(){
+    float nota1, nota2, nota3, media, aulas=60, faltas;
+    char opcao, Verdadeiro, Falso;
+
+    Refaz:
+    printf("digite sua nota:\n");
+    scanf("%f",&nota1);
+    printf("digite sua nota:\n");
+    scanf("%f",&nota2);
+    printf("digite sua nota:\n");
+    scanf("%f",&nota3);
+    printf("Digite suas faltas: \n");
+    scanf("%f", &faltas);
+
+    media = (nota1+nota2+nota3)/3;
+
+    printf("Sua media final e:%f \n", media);
+    
+    if(media>=5){
+        printf("Verdadeiro \n");
+    }
+    else{
+        printf("Falso \n");
+    }
+    
+    if(faltas<15){
+        printf("Verdadeiro \n");
+    }
+    else{
+        printf("Falso \n");
+    }
+    
+    if (media && faltas==Verdadeiro){
+        printf("Reprovado! \n");
+    }
+    else{
+        printf("Voce esta aprovado \n");
+    }
+
+    printf("Deseja calcular novamente?\n");
+    scanf("%s",&opcao);
+    if(opcao=='s'){
+
+        goto Refaz;
+    }
+
+    return 0;
+}
