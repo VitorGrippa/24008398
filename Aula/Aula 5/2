@@ -16,19 +16,19 @@ int main(){
     switch (opcoes){
     case 1:
     soma=nota1+nota2;
-    printf("A sua soma eh: %i", soma);
+    printf("A sua Soma eh: %i", soma);
     break;
     case 2:
     subtracao=nota1-nota2;
-    printf("A sua subtracao eh: %i", subtracao);
+    printf("A sua Subtracao eh: %i", subtracao);
     break;
     case 3:
     multiplicacao=nota1*nota2;
-    printf("A sua multiplicacao eh: %i", multiplicacao);
+    printf("A sua Multiplicacao eh: %i", multiplicacao);
     break;
     case 4:
     divisao=nota1/nota2;
-    printf("A sua divisao eh: %i", divisao);
+    printf("A sua Divisao eh: %i", divisao);
     break;
     }
 }
