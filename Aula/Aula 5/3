@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main(){
+    int opcao, opcoes, nota1, nota2, soma, subtracao, multiplicacao, divisao;
+    Refaz:
+    printf("Digite a nota 1: \n");
+    scanf("%d", &nota1);
+    printf("Digite a nota 2: \n");
+    scanf("%d", &nota2);
+    printf("Opcoes: \n");
+    printf("1. Soma \n");
+    printf("2. Subtracao \n");
+    printf("3. Multiplicacao \n");
+    printf("4. Divisao \n");
+    scanf("%d", &opcoes);
+
+    switch (opcoes){
+    case 1:
+    soma=nota1+nota2;
+    printf("A sua Soma eh: %d \n", soma);
+    break;
+    case 2:
+    subtracao=nota1-nota2;
+    printf("A sua Subtracao eh: %d \n", subtracao);
+    break;
+    case 3:
+    multiplicacao=nota1*nota2;
+    printf("A sua Multiplicacao eh: %d \n", multiplicacao);
+    break;
+    case 4:
+    divisao=nota1/nota2;
+    printf("A sua Divisao eh: %d \n", divisao);
+    if(nota2==0){
+        printf("erro");
+    }
+    break;
+    }
+    printf("Deseja calcular novamente? \n");
+    scanf("%s",&opcao);
+    if(opcao=='s'){
+
+        goto Refaz;
+    }
+}
