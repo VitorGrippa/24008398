@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float largura, altura, area, litros_necessarios;
+    int latas;
+    printf("Digite a largura da parede (em metros): ");
+    scanf("%f", &largura);
+    printf("Digite a altura da parede (em metros): ");
+    scanf("%f", &altura);
+    area = largura * altura;
+    litros_necessarios = area * 0.3;
+    latas = litros_necessarios/2;
+    printf("Você precisará de %d latas de tinta para pintar a parede.\n", latas);
+    return 0;
+}
