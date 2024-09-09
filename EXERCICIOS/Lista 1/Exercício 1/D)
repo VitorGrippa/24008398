@@ -1,0 +1,9 @@
+#include<stdio.h>
+
+int main () {
+    int a;
+    printf("Digite o valor de a: ");
+    scanf("%d", &a);
+    printf("O valor de a eh: %d", a);
+    return 0;
+}
