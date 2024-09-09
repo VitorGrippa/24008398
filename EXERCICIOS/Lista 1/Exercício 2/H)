@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int primeiro_termo, razao, n, enesimo_termo;
+    printf("Digite o primeiro termo da PA: ");
+    scanf("%d", &primeiro_termo);
+    printf("Digite a razão da PA: ");
+    scanf("%d", &razao);
+    printf("Digite o valor de N (o termo que deseja calcular): ");
+    scanf("%d", &n);
+    enesimo_termo = primeiro_termo + (n - 1) * razao;
+    printf("O %d-prossimo termo da PA é: %d\n", n, enesimo_termo);
+    return 0;
+}
