@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#define PI 3.14
+
+int main()
+{
+float raio, area;
+printf("Digite o raio: \n");
+scanf("%f", &raio);
+area = PI * pow(raio, 2);
+//printf("O raio %f elevado ao quadrado e %.2f. \n", raio, quadrado);
+printf("Area total do circulo: %f \n", area);
+return 0;
+}
