@@ -1,13 +1,13 @@
 #include<stdio.h>
-int main()
-{
-int num;
-num=1;
-printf("\n\t Imprimir os números de 1 até 50 : \n");
-while (num<=50)
-{
-printf(" %d\n",num);
-num++;
-}
-return 0;
+int main(){
+    int num;
+    num=1;
+    printf("\n\t Imprimir os números de 1 até 50 : \n");
+    while (num<=50)
+    {
+        printf(" %d\n",num);
+        num++;
+        
+    }
+    return 0;
 }
