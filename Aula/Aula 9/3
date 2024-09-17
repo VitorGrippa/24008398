@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(){
+    int num, a,mult = 1;
+    printf("Digite o numero desejado da tabuada: ");
+    scanf("%d",&num);
+    while (mult<=11)
+    {
+        printf(" %d\n",a);
+        a = num * mult++;
+        
+    }
+    return 0;
+}
