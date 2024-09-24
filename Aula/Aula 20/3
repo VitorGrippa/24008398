@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h>
+
+    int main(){
+    float media, nota1, nota2;
+    int i, alunos;
+    printf("Quantos alunos tem na sala? \n");
+    scanf("%d", &alunos);
+    for (i=1; i<=alunos; i++) {
+          printf("Aluno %d\n", i);
+          printf("Digite a nota 1: \n");
+          scanf("%f", &nota1);
+          printf("Digite a nota 2: \n");
+          scanf("%f", &nota2);
+          media=(nota1+nota2)/2;
+          printf("A sua media eh: %f\n", media);
+
+    if(media>=5){
+        printf("Foi Aprovado\n");
+    }
+    else{
+        printf("Foi Reprovado\n");
+    }
+    }
+    return 0;
+}
