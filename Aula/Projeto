@@ -1,0 +1,75 @@
+#include <stdio.h>
+int main() {
+char tipoCarro, Ford, Chevrolet, Honda, Toyota, Jeep, Volkswagen;
+char cor, branco, preto, cinza;
+char formaPagamento, vista, parceladoCE, parceladoSE;
+int escolha;
+printf("Menu de Produtos:\n");
+printf("1. Ford Ka\n");
+printf("2. Chevrolet Onix\n");
+printf("3. Honda Civic\n");
+printf("4. Toyota Corolla\n");
+printf("5. Jeep Compass\n");
+printf("6. Volkswagen T-Cross\n");
+printf("Escolha um produto (1-6): ");
+scanf("%d", &escolha);
+
+switch (escolha) {
+case 1:
+printf("opcoes:\nFord\nChevrolet\nHonda\nToyota\nJeep\nVolkswagen\n");
+printf("Escolha o seu tipo de carro: \n");
+scanf("%ch", &tipoCarro);
+
+if(tipoCarro=Ford){
+    printf("opcoes:\n branco\n preto\n cinza");
+    printf("escolha a cor do carro: \n");
+    scanf("%ch", cor);
+    if(cor=branco){
+        printf("Escolha a sua forma de pagamento: \n");
+        printf("opcoes:\n vista\n parceladoCE\n parceladoSE\n");
+
+    }
+}
+else if(formaPagamento=parceladoCE){
+
+}
+else if(formaPagamento=parceladoSE){
+
+}
+else{
+    printf("Reescreva");
+}
+printf("Forma de Pagamento:à vista, Especificação: Branco, Preço: 72000");
+
+break;
+case 2:
+printf("Produto:  Chevrolet Onix\n");
+printf("Preco: R$ 1000\n");
+printf("Especificacao: Cor branco.\n");
+break;
+case 3:
+printf("Produto:  Honda Civic\n");
+printf("Preco: R$ 1750\n");
+printf("Especificacao: Cor vermelho.\n");
+break;
+case 4:
+printf("Produto:  Toyota Corolla\n");
+printf("Preco: R$ 2750\n");
+printf("Especificacao: Cor amarelo.\n");
+break;
+case 5:
+printf("Produto:  Jeep Compass\n");
+printf("Preco: R$ 2500\n");
+printf("Especificacao: Cor preto.\n");
+break;
+case 6:
+printf("Produto:  Volkswagen T-Cross\n");
+printf("Preco: R$ 1500\n");
+printf("Especificacao: Cor cinza.\n");
+break;
+default:
+printf("Erro: Produto invalido.\n");
+break;
+}
+return 0;
+}
