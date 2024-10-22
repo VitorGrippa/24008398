@@ -276,11 +276,7 @@ break;
     else{
         printf("senha incorreta\n");
     }
-
-    return 0;
-}
-
-fprintf(projeto,"nome do cliente:Lucas Godoy\n");
+    fprintf(projeto,"nome do cliente:Lucas Godoy\n");
     fprintf(projeto,"numero:19999999999\n");
     fprintf(projeto,"nome do cliente:Mariane Cristina\n");
     fprintf(projeto,"numero:19988888888\n");
@@ -289,3 +285,5 @@ fprintf(projeto,"nome do cliente:Lucas Godoy\n");
     fprintf(projeto,"nome do cliente:%s\n",cliente);
     fprintf(projeto,"numero:%d\n",tel);
     fclose(projeto);
+    return 0;
+}
