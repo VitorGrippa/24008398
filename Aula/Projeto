@@ -1,10 +1,28 @@
 #include <stdio.h>
+#include <string.h>
+
 int main() {
-char tipoCarro, Ford, Chevrolet, Honda, Toyota, Jeep, Volkswagen;
-char cor, branco, preto, cinza;
-char formaPagamento, vista, parceladoCE, parceladoSE;
+char cliente[50];
+char nome[20];
+char senha[20];
+char telefone[12];
+int i,a,e;
+float parcelamento, parcelas, J, valor, entrada;
+char cor;
+char formaPagamento;
 int escolha;
-printf("Menu de Produtos:\n");
+printf("Digite seu nome: \n");
+fgets(nome, sizeof(nome), stdin);
+printf("Digite a senha: \n");
+fgets(senha, sizeof(senha), stdin);
+if (strcmp(senha, "ladygp\n") == 0){
+    printf("Bem Vinda\n");
+    printf("\ndigite o nome do seu cliente: ");
+    fgets(cliente, sizeof(cliente), stdin);
+    printf("digite o numero de telefone do cliente:");
+    scanf("%s", telefone);
+do{
+printf("\nMenu de Produtos:\n");
 printf("1. Ford Ka\n");
 printf("2. Chevrolet Onix\n");
 printf("3. Honda Civic\n");
@@ -13,63 +31,261 @@ printf("5. Jeep Compass\n");
 printf("6. Volkswagen T-Cross\n");
 printf("Escolha um produto (1-6): ");
 scanf("%d", &escolha);
+}
+while(escolha<=1 && escolha>=6);
 
 switch (escolha) {
 case 1:
-printf("opcoes:\nFord\nChevrolet\nHonda\nToyota\nJeep\nVolkswagen\n");
-printf("Escolha o seu tipo de carro: \n");
-scanf("%ch", &tipoCarro);
+printf("\nopcoes:\n");
+printf("b - Branco\np - Preto\nc - Cinza\n\n");
+printf("Escolha a cor do carro (b/p/c): \n");
+scanf("%s", &cor);
 
-if(tipoCarro=Ford){
-    printf("opcoes:\n branco\n preto\n cinza");
-    printf("escolha a cor do carro: \n");
-    scanf("%ch", cor);
-    if(cor=branco){
-        printf("Escolha a sua forma de pagamento: \n");
-        printf("opcoes:\n vista\n parceladoCE\n parceladoSE\n");
-
+    if(cor=='b'){
+        printf("Preco: 72000\n\n");
+        valor=72000;
+        printf("opcoes de pagamento:\n");
+        printf("a - a vista\np - parcelado\n");
+        printf("escolha a sua forma de pagamento (a/p): \n");
+        scanf("%s", &formaPagamento);
     }
-}
-else if(formaPagamento=parceladoCE){
-
-}
-else if(formaPagamento=parceladoSE){
-
-}
-else{
-    printf("Reescreva");
-}
-printf("Forma de Pagamento:à vista, Especificação: Branco, Preço: 72000");
+    else if(cor=='p'){
+        printf("Preco: 75000\n\n");
+        valor=75000;
+        printf("opcoes de pagamento:\n");
+        printf("a - a vista\np - parcelado\n");
+        printf("escolha a sua forma de pagamento (a/p): \n");
+        scanf("%s", &formaPagamento);
+    }
+    else if(cor=='c'){
+        printf("Preco: 82000\n\n");
+        valor=82000;
+        printf("opcoes de pagamento:\n");
+        printf("a - a vista\np - parcelado\n");
+        printf("escolha a sua forma de pagamento (a/p): \n");
+        scanf("%s", &formaPagamento);
+    }
+    else{
+        printf("Erro. Reescreva");
+    }
 
 break;
 case 2:
-printf("Produto:  Chevrolet Onix\n");
-printf("Preco: R$ 1000\n");
-printf("Especificacao: Cor branco.\n");
-break;
+    printf("\nopcoes:\n");
+    printf("b - Branco\np - Preto\nc - Cinza\n\n");
+    printf("Escolha a cor do carro (b/p/c): \n");
+    scanf("%s", &cor);
+
+        if(cor=='b'){
+            printf("Preco: 80000\n\n");
+            valor=80000;
+            printf("opcoes de pagamento:\n");
+            printf("a - a vista\np - parcelado\n");
+            printf("escolha a sua forma de pagamento (a/p): \n");
+            scanf("%s", &formaPagamento);
+        }
+        else if(cor=='p'){
+            printf("Preco: 83000\n\n");
+            valor=83000;
+            printf("opcoes de pagamento:\n");
+            printf("a - a vista\np - parcelado\n");
+            printf("escolha a sua forma de pagamento (a/p): \n");
+            scanf("%s", &formaPagamento);
+        }
+        else if(cor=='c'){
+            printf("Preco: 90000\n\n");
+            valor=90000;
+            printf("opcoes de pagamento:\n");
+            printf("a - a vista\np - parcelado\n");
+            printf("escolha a sua forma de pagamento (a/p): \n");
+            scanf("%s", &formaPagamento);
+        }
+        else{
+            printf("Erro. Reescreva");
+        }
+    break;
 case 3:
-printf("Produto:  Honda Civic\n");
-printf("Preco: R$ 1750\n");
-printf("Especificacao: Cor vermelho.\n");
-break;
+    printf("\nopcoes:\n");
+    printf("b - Branco\np - Preto\nc - Cinza\n\n");
+    printf("Escolha a cor do carro (b/p/c): \n");
+    scanf("%s", &cor);
+
+        if(cor=='b'){
+            printf("Preco: 120000\n\n");
+            valor=120000;
+            printf("opcoes de pagamento:\n");
+            printf("a - a vista\np - parcelado\n");
+            printf("escolha a sua forma de pagamento (a/p): \n");
+            scanf("%s", &formaPagamento);
+        }
+        else if(cor=='p'){
+            printf("Preco: 123000\n\n");
+            valor=123000;
+            printf("opcoes de pagamento:\n");
+            printf("a - a vista\np - parcelado\n");
+            printf("escolha a sua forma de pagamento (a/p): \n");
+            scanf("%s", &formaPagamento);
+        }
+        else if(cor=='c'){
+            printf("Preco: 130000\n\n");
+            valor=130000;
+            printf("opcoes de pagamento:\n");
+            printf("a - a vista\np - parcelado\n");
+            printf("escolha a sua forma de pagamento (a/p): \n");
+            scanf("%s", &formaPagamento);
+        }
+        else{
+            printf("Erro. Reescreva");
+        }
+    break;
 case 4:
-printf("Produto:  Toyota Corolla\n");
-printf("Preco: R$ 2750\n");
-printf("Especificacao: Cor amarelo.\n");
-break;
+    printf("\nopcoes:\n");
+    printf("b - Branco\np - Preto\nc - Cinza\n\n");
+    printf("Escolha a cor do carro (b/p/c): \n");
+    scanf("%s", &cor);
+
+    if(cor=='b'){
+        printf("Preco: 130000\n\n");
+        valor=130000;
+        printf("opcoes de pagamento:\n");
+        printf("a - a vista\np - parcelado\n");
+        printf("escolha a sua forma de pagamento (a/p): \n");
+        scanf("%s", &formaPagamento);
+    }
+    else if(cor=='p'){
+        printf("Preco: 133000\n\n");
+        valor=133000;
+        printf("opcoes de pagamento:\n");
+        printf("a - a vista\np - parcelado\n");
+        printf("escolha a sua forma de pagamento (a/p): \n");
+        scanf("%s", &formaPagamento);
+    }
+    else if(cor=='c'){
+        printf("Preco: 140000\n\n");
+        valor=140000;
+        printf("opcoes de pagamento:\n");
+        printf("a - a vista\np - parcelado\n");
+        printf("escolha a sua forma de pagamento (a/p): \n");
+        scanf("%s", &formaPagamento);
+    }
+    else{
+        printf("Erro. Reescreva");
+    }
+    break;
 case 5:
-printf("Produto:  Jeep Compass\n");
-printf("Preco: R$ 2500\n");
-printf("Especificacao: Cor preto.\n");
-break;
+    printf("\nopcoes:\n");
+    printf("b - Branco\np - Preto\nc - Cinza\n\n");
+    printf("Escolha a cor do carro (b/p/c): \n");
+    scanf("%s", &cor);
+
+    if(cor=='b'){
+        printf("Preco: 180000\n\n");
+        valor=180000;
+        printf("opcoes de pagamento:\n");
+        printf("a - a vista\np - parcelado\n");
+        printf("escolha a sua forma de pagamento (a/p): \n");
+        scanf("%s", &formaPagamento);
+    }
+    else if(cor=='p'){
+        printf("Preco: 183000\n\n");
+        valor=183000;
+        printf("opcoes de pagamento:\n");
+        printf("a - a vista\np - parcelado\n");
+        printf("escolha a sua forma de pagamento (a/p): \n");
+        scanf("%s", &formaPagamento);
+    }
+    else if(cor=='c'){
+        printf("Preco: 190000\n\n");
+        valor=190000;
+        printf("opcoes de pagamento:\n");
+        printf("a - a vista\np - parcelado\n");
+        printf("escolha a sua forma de pagamento (a/p): \n");
+        scanf("%s", &formaPagamento);
+    }
+    else{
+        printf("Erro. Reescreva");
+    }
+    break;
 case 6:
-printf("Produto:  Volkswagen T-Cross\n");
-printf("Preco: R$ 1500\n");
-printf("Especificacao: Cor cinza.\n");
-break;
+    printf("\nopcoes:\n");
+    printf("b - Branco\np - Preto\nc - Cinza\n\n");
+    printf("Escolha a cor do carro (b/p/c): \n");
+    scanf("%s", &cor);
+
+    if(cor=='b'){
+        printf("Preco: 162000\n\n");
+        valor=162000;
+        printf("opcoes de pagamento:\n");
+        printf("a - a vista\np - parcelado\n");
+        printf("escolha a sua forma de pagamento (a/p): \n");
+        scanf("%s", &formaPagamento);
+    }
+    else if(cor=='p'){
+        printf("Preco: 165000\n\n");
+        valor=165000;
+        printf("opcoes de pagamento:\n");
+        printf("a - a vista\np - parcelado\n");
+        printf("escolha a sua forma de pagamento (a/p): \n");
+        scanf("%s", &formaPagamento);
+    }
+    else if(cor=='c'){
+        printf("Preco: 170000\n\n");
+        valor=170000;
+        printf("opcoes de pagamento:\n");
+        printf("a - a vista\np - parcelado\n");
+        printf("escolha a sua forma de pagamento (a/p): \n");
+        scanf("%s", &formaPagamento);
+    }
+    else{
+        printf("Erro. Reescreva");
+    }
+    break;
 default:
 printf("Erro: Produto invalido.\n");
 break;
 }
-return 0;
+    if (formaPagamento == 'a') {
+        printf("Pagamento: À vista\n");
+        printf("Preço final: R$ %.2f\n", valor);
+    }
+    else if (formaPagamento == 'p') {
+        refaz:
+        printf("Pagamento: Parcelado\n");
+        printf("Quantas parcelas deseja pagar: ");
+        scanf("%f", &parcelamento);
+    
+        printf("Quanto deseja pagar de entrada: ");
+        scanf("%f", &entrada);
+        
+
+    if(entrada>=8000 && parcelamento<=60){
+        parcelas = (valor - entrada) / parcelamento;
+        printf("Valor das parcelas: R$ %.2f\n", parcelas);
+        J=parcelas*0.10*parcelamento;
+        printf("Valor das parcelas com juros: R$ %.2f\n", J);
+    }
+    else{
+        printf("reescreva as parcelas\n");
+        goto refaz;
+    }
+    }
+    else {
+    printf("Erro: Forma de pagamento inválida.\n");
+    }
+    }
+    else{
+        printf("senha incorreta\n");
+    }
+
+    return 0;
 }
+
+fprintf(projeto,"nome do cliente:Lucas Godoy\n");
+    fprintf(projeto,"numero:19999999999\n");
+    fprintf(projeto,"nome do cliente:Mariane Cristina\n");
+    fprintf(projeto,"numero:19988888888\n");
+    fprintf(projeto,"nome do cliente:Brian Cornnor\n");
+    fprintf(projeto,"numero:19977777777\n");
+    fprintf(projeto,"nome do cliente:%s\n",cliente);
+    fprintf(projeto,"numero:%d\n",tel);
+    fclose(projeto);
