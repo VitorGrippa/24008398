@@ -1,10 +1,9 @@
 #include <stdio.h>
 int main() {
-//char tipoCarro, Ford, Chevrolet, Honda, Toyota, Jeep, Volkswagen;
 char cor;
-//char formaPagamento, vista, parceladoCE, parceladoSE;
 char formaPagamento;
 int escolha;
+do{
 printf("Menu de Produtos:\n");
 printf("1. Ford Ka\n");
 printf("2. Chevrolet Onix\n");
@@ -14,31 +13,35 @@ printf("5. Jeep Compass\n");
 printf("6. Volkswagen T-Cross\n");
 printf("Escolha um produto (1-6): ");
 scanf("%d", &escolha);
-
+}
+while(escolha<=1 && escolha>=6);
 switch (escolha) {
 case 1:
 printf("\nopcoes:\n");
 printf("b - Branco\np - Preto\nc - Cinza\n\n");
 printf("Escolha a cor do carro (b/p/c): \n");
-scanf(" %c", &cor);
+scanf("%s", &cor);
 
 if(cor=='b'){
-    printf("Preço: 72000\n");
-    printf("opcoes:\n vista\n parceladoCE\n parceladoSE\n");
-    printf("escolha a sua forma de pagamento: \n");
-    scanf(" %c", formaPagamento);
+    printf("Preco: 72000\n\n");
+    printf("opcoes de pagamento:\n");
+    printf("a - a vista\npce - parcelado com entrada\npse - parcelado sem entrada\n");
+    printf("escolha a sua forma de pagamento (a/pce/pse): \n");
+    scanf("%s", &formaPagamento);
 }
 else if(cor=='p'){
-    printf("Preço: 75000");
-    printf("opcoes:\n vista\n parceladoCE\n parceladoSE");
-    printf("escolha a sua forma de pagamento: \n");
-    scanf(" %c", formaPagamento);
+    printf("Preco: 75000\n\n");
+    printf("opcoes de pagamento:\n");
+    printf("a - a vista\npce - parcelado com entrada\npse - parcelado sem entrada\n");
+    printf("escolha a sua forma de pagamento (a/pce/pse): \n");
+    scanf("%s", &formaPagamento);
 }
 else if(cor=='c'){
-    printf("Preço: 82000");
-    printf("opcoes:\n vista\n parceladoCE\n parceladoSE");
-    printf("escolha a sua forma de pagamento: \n");
-    scanf(" %c", formaPagamento);
+    printf("Preco: 82000\n\n");
+    printf("opcoes de pagamento:\n");
+    printf("a - a vista\npce - parcelado com entrada\npse - parcelado sem entrada\n");
+    printf("escolha a sua forma de pagamento (a/pce/pse): \n");
+    scanf("%s", &formaPagamento);
 }
 else{
     printf("Erro. Reescreva");
@@ -46,29 +49,159 @@ else{
 
 break;
 case 2:
-printf("Produto:  Chevrolet Onix\n");
-printf("Preco: R$ 1000\n");
-printf("Especificacao: Cor branco.\n");
+printf("\nopcoes:\n");
+printf("b - Branco\np - Preto\nc - Cinza\n\n");
+printf("Escolha a cor do carro (b/p/c): \n");
+scanf("%s", &cor);
+
+if(cor=='b'){
+    printf("Preco: 80000\n\n");
+    printf("opcoes de pagamento:\n");
+    printf("a - a vista\npce - parcelado com entrada\npse - parcelado sem entrada\n");
+    printf("escolha a sua forma de pagamento (a/pce/pse): \n");
+    scanf("%s", &formaPagamento);
+}
+else if(cor=='p'){
+    printf("Preco: 83000\n\n");
+    printf("opcoes de pagamento:\n");
+    printf("a - a vista\npce - parcelado com entrada\npse - parcelado sem entrada\n");
+    printf("escolha a sua forma de pagamento (a/pce/pse): \n");
+    scanf("%s", &formaPagamento);
+}
+else if(cor=='c'){
+    printf("Preco: 90000\n\n");
+    printf("opcoes de pagamento:\n");
+    printf("a - a vista\npce - parcelado com entrada\npse - parcelado sem entrada\n");
+    printf("escolha a sua forma de pagamento (a/pce/pse): \n");
+    scanf("%s", &formaPagamento);
+}
+else{
+    printf("Erro. Reescreva");
+}
 break;
 case 3:
-printf("Produto:  Honda Civic\n");
-printf("Preco: R$ 1750\n");
-printf("Especificacao: Cor vermelho.\n");
+printf("\nopcoes:\n");
+printf("b - Branco\np - Preto\nc - Cinza\n\n");
+printf("Escolha a cor do carro (b/p/c): \n");
+scanf("%s", &cor);
+
+if(cor=='b'){
+    printf("Preco: 120000\n\n");
+    printf("opcoes de pagamento:\n");
+    printf("a - a vista\npce - parcelado com entrada\npse - parcelado sem entrada\n");
+    printf("escolha a sua forma de pagamento (a/pce/pse): \n");
+    scanf("%s", &formaPagamento);
+}
+else if(cor=='p'){
+    printf("Preco: 123000\n\n");
+    printf("opcoes de pagamento:\n");
+    printf("a - a vista\npce - parcelado com entrada\npse - parcelado sem entrada\n");
+    printf("escolha a sua forma de pagamento (a/pce/pse): \n");
+    scanf("%s", &formaPagamento);
+}
+else if(cor=='c'){
+    printf("Preco: 130000\n\n");
+    printf("opcoes de pagamento:\n");
+    printf("a - a vista\npce - parcelado com entrada\npse - parcelado sem entrada\n");
+    printf("escolha a sua forma de pagamento (a/pce/pse): \n");
+    scanf("%s", &formaPagamento);
+}
+else{
+    printf("Erro. Reescreva");
+}
 break;
 case 4:
-printf("Produto:  Toyota Corolla\n");
-printf("Preco: R$ 2750\n");
-printf("Especificacao: Cor amarelo.\n");
+printf("\nopcoes:\n");
+printf("b - Branco\np - Preto\nc - Cinza\n\n");
+printf("Escolha a cor do carro (b/p/c): \n");
+scanf("%s", &cor);
+
+if(cor=='b'){
+    printf("Preco: 130000\n\n");
+    printf("opcoes de pagamento:\n");
+    printf("a - a vista\npce - parcelado com entrada\npse - parcelado sem entrada\n");
+    printf("escolha a sua forma de pagamento (a/pce/pse): \n");
+    scanf("%s", &formaPagamento);
+}
+else if(cor=='p'){
+    printf("Preco: 133000\n\n");
+    printf("opcoes de pagamento:\n");
+    printf("a - a vista\npce - parcelado com entrada\npse - parcelado sem entrada\n");
+    printf("escolha a sua forma de pagamento (a/pce/pse): \n");
+    scanf("%s", &formaPagamento);
+}
+else if(cor=='c'){
+    printf("Preco: 140000\n\n");
+    printf("opcoes de pagamento:\n");
+    printf("a - a vista\npce - parcelado com entrada\npse - parcelado sem entrada\n");
+    printf("escolha a sua forma de pagamento (a/pce/pse): \n");
+    scanf("%s", &formaPagamento);
+}
+else{
+    printf("Erro. Reescreva");
+}
 break;
 case 5:
-printf("Produto:  Jeep Compass\n");
-printf("Preco: R$ 2500\n");
-printf("Especificacao: Cor preto.\n");
+printf("\nopcoes:\n");
+printf("b - Branco\np - Preto\nc - Cinza\n\n");
+printf("Escolha a cor do carro (b/p/c): \n");
+scanf("%s", &cor);
+
+if(cor=='b'){
+    printf("Preco: 180000\n\n");
+    printf("opcoes de pagamento:\n");
+    printf("a - a vista\npce - parcelado com entrada\npse - parcelado sem entrada\n");
+    printf("escolha a sua forma de pagamento (a/pce/pse): \n");
+    scanf("%s", &formaPagamento);
+}
+else if(cor=='p'){
+    printf("Preco: 183000\n\n");
+    printf("opcoes de pagamento:\n");
+    printf("a - a vista\npce - parcelado com entrada\npse - parcelado sem entrada\n");
+    printf("escolha a sua forma de pagamento (a/pce/pse): \n");
+    scanf("%s", &formaPagamento);
+}
+else if(cor=='c'){
+    printf("Preco: 190000\n\n");
+    printf("opcoes de pagamento:\n");
+    printf("a - a vista\npce - parcelado com entrada\npse - parcelado sem entrada\n");
+    printf("escolha a sua forma de pagamento (a/pce/pse): \n");
+    scanf("%s", &formaPagamento);
+}
+else{
+    printf("Erro. Reescreva");
+}
 break;
 case 6:
-printf("Produto:  Volkswagen T-Cross\n");
-printf("Preco: R$ 1500\n");
-printf("Especificacao: Cor cinza.\n");
+printf("\nopcoes:\n");
+printf("b - Branco\np - Preto\nc - Cinza\n\n");
+printf("Escolha a cor do carro (b/p/c): \n");
+scanf("%s", &cor);
+
+if(cor=='b'){
+    printf("Preco: 162000\n\n");
+    printf("opcoes de pagamento:\n");
+    printf("a - a vista\npce - parcelado com entrada\npse - parcelado sem entrada\n");
+    printf("escolha a sua forma de pagamento (a/pce/pse): \n");
+    scanf("%s", &formaPagamento);
+}
+else if(cor=='p'){
+    printf("Preco: 165000\n\n");
+    printf("opcoes de pagamento:\n");
+    printf("a - a vista\npce - parcelado com entrada\npse - parcelado sem entrada\n");
+    printf("escolha a sua forma de pagamento (a/pce/pse): \n");
+    scanf("%s", &formaPagamento);
+}
+else if(cor=='c'){
+    printf("Preco: 170000\n\n");
+    printf("opcoes de pagamento:\n");
+    printf("a - a vista\npce - parcelado com entrada\npse - parcelado sem entrada\n");
+    printf("escolha a sua forma de pagamento (a/pce/pse): \n");
+    scanf("%s", &formaPagamento);
+}
+else{
+    printf("Erro. Reescreva");
+}
 break;
 default:
 printf("Erro: Produto invalido.\n");
