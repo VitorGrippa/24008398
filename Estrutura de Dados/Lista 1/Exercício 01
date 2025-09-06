@@ -3,7 +3,7 @@
 int main(){
 
 int num1, num2, num3, crescent;
-printf("Digite tres numeros inteiros: ");
+printf("Digite tres numeros inteiros: \n");
 scanf("%d %d %d", &num1, &num2, &num3);
 
 if(num1>num2){
