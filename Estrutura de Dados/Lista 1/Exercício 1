@@ -1,1 +1,26 @@
+#include <stdio.h>
 
+int main(){
+
+int num1, num2, num3, crescent;
+printf("Digite tres numeros inteiros: ");
+scanf("%d %d %d", &num1, &num2, &num3);
+
+if(num1>num2){
+    crescent = num1;
+    num1 = num2;
+    num2 = crescent;
+}
+if(num1>num3){
+    crescent = num1;
+    num1 = num3;
+    num3 = crescent;
+}
+if(num2>num3){
+    crescent = num2;
+    num2 = num3;
+    num3 = crescent;
+}
+printf("Ordem crescente: %d %d %d\n", num1, num2, num3);
+return 0;
+}
