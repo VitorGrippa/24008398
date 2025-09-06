@@ -1,1 +1,18 @@
+#include <stdio.h>
 
+int main() {
+    char RA[] = "24008398";
+    int n3 = RA[2] - '0';
+    int n5 = RA[4] - '0';
+    int soma = n3 + n5;
+
+    printf("Soma do digito 3 e 5 = %d\n", soma);
+    printf("Contagem regressiva:\n");
+
+    while (soma >= 0) {
+        printf("%d\n", soma);
+        soma--;
+    }
+
+    return 0;
+}
