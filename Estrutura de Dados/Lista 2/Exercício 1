@@ -1,1 +1,21 @@
+#include <stdio.h>
 
+int num; // variável global
+
+int quad() {
+    return num * num;
+}
+
+int dobro() {
+    return num * 2;
+}
+
+int main() {
+    printf("Digite um numero inteiro: ");
+    scanf("%d", &num);
+
+    printf("Quadrado de %d = %d\n", num, quad());
+    printf("Dobro de %d = %d\n", num, dobro());
+
+    return 0;
+}
